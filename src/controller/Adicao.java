@@ -1,3 +1,5 @@
+package controller;
+
 import java.util.Scanner;
 
 public class Adicao {
@@ -7,12 +9,13 @@ public class Adicao {
         int num1;
         int num2;
         int soma;
-        System.out.println("Digite o primeiro número: ");
+        System.out.println("Digite a primeira nota: ");
         num1 = input.nextInt();
-        System.out.println("Digite o segundo número: ");
+        System.out.println("Digite a segunda nota: ");
         num2 = input.nextInt();
         soma = num1 + num2;
-        System.out.println("A soma dos dois números é: " + soma);
+        System.out.println("A média das notas  é: " + soma);
         input.close();
+        System.out.println(soma >= 6 ? "Aprovado" : "Reprovado");   //operador condicional : se soma for maior que 6 então aprovado senão reprovado//2
     }
 }

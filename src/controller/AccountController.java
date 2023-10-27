@@ -14,6 +14,29 @@ public class AccountController{
 
         System.out.println("Nome da conta: ");
         System.out.println(minhaConta.getName());
+        Account account1 =new Account("Janaína Green", 50.00);
+        Account account2 =new Account("João Blue", -7.53);
+
+        System.out.println("Saldo: " + account1.getName() + account1.getSaldo());
+        System.out.println("Saldo: " + account2.getName() + account2.getSaldo());
+        //cria um Scanner para obter entrada a partir da janela de comando//
+        System.out.println("Digite o valor a ser depositado para conta 1: ");
+        double depositaQuantia = input.nextDouble(); //obtem a entrada do usuário//
+        System.out.println("Adicionando: " + depositaQuantia);
+        account1.deposita(depositaQuantia);
+
+        //exibe os saldos//
+        System.out.println(" Saldo:  " + account1.getName() + "= " + account1.getSaldo());
+        System.out.println(" Saldo:  " + account2.getName() + "= " + account2.getSaldo());
+
+        System.out.println("Digite o valor a ser depositado para conta 2: ");
+        double depositaQuantia2 = input.nextDouble(); //obtem a entrada do usuário em valor Double//
+        System.out.println("Adicionando: " + depositaQuantia2);
+        account2.deposita(depositaQuantia2);
+
+        System.out.println(" Saldo:  " + account1.getName() + "= " + account1.getSaldo());
+        System.out.println(" Saldo:  " + account2.getName() + "= " + account2.getSaldo());
+
     }
 }
 
